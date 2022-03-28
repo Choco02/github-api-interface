@@ -3,6 +3,7 @@ import Layout from "./components/layout";
 import NoSearch from "./components/no-search";
 import Profile from "./components/profile";
 import Repositories from "./components/repositories";
+import { UsersHistory } from "./components/users-history";
 import useGithub from "./hooks/github-hooks";
 
 const App = () => {
@@ -21,7 +22,13 @@ const App = () => {
           )}
         </>
       ) : (
-        <NoSearch />
+        <>
+          <NoSearch />
+          <p> Visitados recentemente </p>
+          {
+            <UsersHistory />
+          }
+        </>
       )}
     </Layout>
   );
