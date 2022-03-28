@@ -13,12 +13,14 @@ We will create an application using the github public api.
 - Search infos by username
 - Search repo by username
 - Search starred by username
+- User search history feature
 
 ### Preview
 
 Print of the finished project.
 
 ![plot](./image/snapshot-1.png)
+![plot](./image/snapshot-2.jpg)
 
 ### Libraries used
 
