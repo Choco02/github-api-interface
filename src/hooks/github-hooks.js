@@ -6,6 +6,9 @@ const useGithub = () => {
     GithubContext
   );
 
+  githubState.hasUser &&
+    localStorage.setItem(`${githubState.user.id}`, JSON.stringify(githubState));
+
   return { githubState, getUser, getUserRepos, getUserStarred };
 };
 
